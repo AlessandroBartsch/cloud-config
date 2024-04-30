@@ -2,10 +2,6 @@ spring:
   application:
     name: bugui
 
-greeting-service:
-  greeting: "Hola"
-  default-value: "Mundo"
-
   datasource:
     url: jdbc:mysql://localhost:3306/mydatabase
     username: myuser
@@ -15,6 +11,9 @@ greeting-service:
     enabled: true
     locations: classpath:db/migration
 
+bugui:
+  greeting: "Hola"
+  default-value: "Mundo"
 management:
   endpoints:
     web:
